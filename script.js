@@ -268,6 +268,7 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("quizMessage").textContent = message;
 
             document.getElementById("quizResult").style.display = "block";
+            
             fetch("http://127.0.0.1:5000/api/save-quiz", {
                 method: "POST",
                 headers: {
